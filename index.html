@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Michroma&family=Offside&display=swap" rel="stylesheet">
@@ -12,27 +12,29 @@
 <body>
     <section id="pagInicio">
         <div class="tarjeta">
-            <h1>BIENVENID@</h1>
-            <h2>Soy <span>Gabriel Pinilla</span> 
-               , aunque entre amigos y proyectos, me conocen como <span>Gabo</span></h2>
-            <h4>(sí, como García Márquez).</h4>
-            <h3><span>Diseño con propósito y desarrollo con lógica:</span> soy diseñador industrial, UX designer y desarrollador Full Stack.</h3>
+            <div id="textoInicio">
+                <h1>BIENVENID@</h1>
+                <h2>Soy <span>Gabriel Pinilla</span> 
+                    , aunque entre amigos y proyectos, me conocen como <span>Gabo</span></h2>
+                    <h4>(sí, como García Márquez).</h4>
+                    <h3><span>Diseño con propósito y desarrollo con lógica:</span> soy diseñador industrial, UX designer y desarrollador Full Stack.</h3>
+            </div>
             <a href="#pagMenu" id="inicio">Iniciar</a>
             <div class="link-inicio">
                 <a href="https://www.linkedin.com/in/gabriel-pinilla-disenador-desarrollador" target="_blank"><img src="./Imagenes/linkedin_inicio.png"></a>
-                <a href="https://github.com/Arkanhell98" target="_blank"><img src="./Imagenes/github_inicio.png"></a>
+                <a href="https://github.com/gabriel-pinilla-c" target="_blank"><img src="./Imagenes/github_inicio.png"></a>
             </div>
         </div>
     </section>
     <section id="pagMenu">
         <div class="tarjeta1">
-            <div class="menu-buttons">
-                <button id="sobreMi" class = "botonesMenu">Sobre mí</button>
-                <button id="habilidades" class = "botonesMenu">Habilidades</button>
-                <button id="educacion" class ="botonesMenu">Educación</button>
-                <button id="proyectos" class ="botonesMenu">Proyectos</button>
+            <ul class="menu-buttons">
+                <li><button id="sobreMi" class = "botonesMenu">Sobre mí</button></li>
+                <li><button id="habilidades" class = "botonesMenu">Habilidades</button></li>
+                <li><button id="educacion" class ="botonesMenu">Educación</button></li>
+                <li><button id="proyectos" class ="botonesMenu">Proyectos</button></li>
                 <button id="contactame" onclick="location.href='#pagContacto'">Contáctame</button>
-            </div>
+            </ul>
             <div id="principal">
                 <div class="opcion1" id="descripcion">
                     <h2>Sobre mi</h2>

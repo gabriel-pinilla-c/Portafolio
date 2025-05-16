@@ -1,0 +1,25 @@
+@import url('main.css');
+@import url('menu.css');
+@import url('contact.css');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: y mandatory;
+}
+body{
+    width:100vw;
+    height: 100vh;
+    cursor: url(../Imagenes/cursor1.png),auto;
+    background-color:#363333 ;
+}
+a{
+    cursor: url(../Imagenes/cursor2.png),auto;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop:always;
+}
+
+

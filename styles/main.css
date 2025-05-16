@@ -1,0 +1,201 @@
+.tarjeta{
+    height: 100vh;
+    width: 100vw;
+    background-color: #DE7330;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tarjeta::before{
+    content: "";
+    position: absolute;
+    top: -200%; 
+    left: 0;
+    height: 300vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, #F6E9E9 20%, transparent 80%);
+    animation: slide 2s linear infinite;
+    z-index: 0;
+}
+@keyframes slide{
+    from{
+        transform: translateY(100%); 
+    }to{
+        transform: translateY(0); 
+    }
+}
+.tarjeta::after{
+    content:"";
+    position:absolute;
+    height: 100vh;
+    width:100vw;
+    background-image: url(../Imagenes/marco_principal.png);
+    background-size:100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+#textoInicio{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    height: 80vh;
+    width: 80vw;
+}
+
+#pagInicio h1{
+    color: #F6E9E9;
+    font-family: "Goldman";
+    font-size: 96px;
+    text-shadow: 0 0 10px #F6E9E9;
+    align-items: center;
+}
+#pagInicio h2{
+    color: #F6E9E9;
+    font-family: "Michroma";
+    font-size: 28px;
+    text-shadow: 0 0 3px #F6E9E9;
+    font-weight: 200;
+}
+#pagInicio h2 span{
+    color: #DE7330;
+    font-family: "Goldman";
+    font-size: 50px;
+    text-shadow: 0 0 6px #DE7330;
+}
+#pagInicio h4{
+    color: #F6E9E9;
+    font-family: "Michroma";
+    font-size: 16px;
+    text-shadow: 0 0 3px #F6E9E9;
+    font-weight: 200;
+}
+#pagInicio h3{
+    color: #F6E9E9;
+    padding: 10px;
+    font-family: "Michroma";
+    font-size: 16px;
+    text-shadow: 0 0 3px #F6E9E9;
+    font-weight: 200;
+}
+#pagInicio h3 span{
+    color: #DE7330;
+    font-family: "Goldman";
+    font-size: 20px;
+    text-shadow: 0 0 6px #DE7330;
+}
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #F6E9E9;
+    margin: 50px;
+    z-index: 2;
+    width: 200px;
+    height: 50px;
+    background: #DE7330;
+    border: 3px solid #F6E9E9;
+    box-shadow: 0px 0px 20px #DE7330;
+    font-family: "Goldman";
+    font-size: 30px;
+    font-weight: 600;
+    cursor: url(../Imagenes/cursor2.png),auto;
+    position: absolute;
+    bottom: 150px;
+}
+
+#inicio:hover {
+    margin: 50px;
+    z-index: 2;
+    width: 200px;
+    height: 50px;
+    background: #df8c59;
+    border: 3px solid #F6E9E9;
+    box-shadow: 0px 0px 20px #df8c59;
+    font-family: "Goldman";
+    font-size: 30px;
+    font-weight: 600;
+    cursor: url(../Imagenes/cursor2.png),auto;
+    position: absolute;
+    bottom: 150px;
+}
+#inicio:active {
+    margin: 50px;
+    z-index: 2;
+    width: 200px;
+    height: 50px;
+    background: #d1b09b;
+    border: 3px solid #F6E9E9;
+    box-shadow: 0px 0px 20px #d1b09b;
+    font-family: "Goldman";
+    font-size: 30px;
+    font-weight: 600;
+    cursor: url(../Imagenes/cursor2.png),auto;
+    position: absolute;
+    bottom: 150px;
+}
+.link-inicio{
+    z-index:2;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 60px;
+    left: 80px;
+}
+.link-inicio img{
+    height: 100px;
+    padding: 5px;
+}
+.link-inicio img:active{
+    height: 95px;
+}
+@media (max-width: 1038px){
+    .tarjeta{
+        justify-content: center;
+        align-items: center;
+    }
+    #pagInicio{
+        display: flex;
+    }
+    #pagInicio h1{
+        font-size: 10vw;
+    }
+    #pagInicio h2{
+        font-size: 3vw;
+        font-weight: 200;
+    }
+    #pagInicio h2 span{
+        font-size: 4vw;
+
+    }
+    #pagInicio h4{
+    font-size:2vw ;
+    }
+    #pagInicio h3{
+        font-size:3vw;
+    }
+    #pagInicio h3 span{
+        font-size: 4vw;
+    }
+    #inicio{
+        width: 30vw;
+        height:auto;
+        font-size: 4vw;
+    }
+    .link-inicio{
+        display: flex;
+        justify-content: center;
+    }
+    .link-inicio img{
+        width: auto;
+        height: 10vh;
+    }
+
+}

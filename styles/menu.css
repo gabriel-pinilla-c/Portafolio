@@ -1,0 +1,418 @@
+#pagMenu{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.tarjeta1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #363333;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tarjeta1::before{
+    content: "";
+    position: absolute;
+    top: -200%; 
+    left: 0;
+    height: 300vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, #F6E9E9 20%, transparent 80%);
+    animation: slide 2s linear infinite;
+    z-index: 0;
+}
+@keyframes slide{
+    from{
+        transform: translateY(100%); 
+    }to{
+        transform: translateY(0); 
+    }
+}
+.tarjeta1::after{
+    content:"";
+    position:relative;
+    height: 100vh;
+    width:100vw;
+    background-image: url(../Imagenes/fondo_menu.png);
+    background-size:100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-buttons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:8%;
+    bottom:7%;
+    background:transparent;
+    z-index: 2;
+}
+.menu-buttons li{
+    list-style: none
+}
+.menu-buttons button{
+    margin: 10px;
+    width:300px;
+    height:60px ;
+    background: #de73307c;
+    border: 3px solid #f6e9e973;
+    box-shadow: 0px 0px 20px #301d11;
+    font-family: "Goldman";
+    font-size: 30px;
+    font-weight: 800;
+    color: #f6e9e973;
+    cursor: url(../Imagenes/cursor2.png),auto;
+    text-align:left;
+    padding-left: 10px;
+    z-index: 2;
+}
+.menu-buttons button:hover{
+    margin: 10px;
+    width:300px;
+    height:60px ;
+    background: #de73307c;
+    border: 3px solid #f6e9e9;
+    box-shadow: 0px 0px 20px #301d11;
+    font-family: "Goldman";
+    font-size: 30px;
+    font-weight: 800;
+    color: #f6e9e9;
+    cursor: url(../Imagenes/cursor2.png),auto;
+    text-align:left;
+    padding-left: 10px;
+    z-index: 2;
+}
+#contactame:hover{
+    margin: 10px;
+    width:300px;
+    height:60px ;
+    background: #de7330;
+    border: 3px solid #f6e9e9;
+    box-shadow: 0px 0px 20px #d49770;
+    font-family: "Goldman";
+    font-size: 30px;
+    font-weight: 800;
+    color: #f6e9e9;
+    cursor: url(../Imagenes/cursor2.png),auto;
+    text-align:left;
+    padding-left: 10px;
+    z-index: 2;
+}
+.menu-buttons button.active{
+    margin: 10px;
+    width:300px;
+    height:60px ;
+    background: #de7330;
+    border: 3px solid #f6e9e9;
+    box-shadow: 0px 0px 20px #d49770;
+    font-family: "Goldman";
+    font-size: 30px;
+    font-weight: 800;
+    color: #f6e9e9;
+    cursor: url(../Imagenes/cursor2.png),auto;
+    text-align:left;
+    padding-left: 10px;
+    z-index: 2;
+}
+#principal,
+#principal1,
+#principal2,
+#principal3{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    display: none;
+    z-index: 2;
+}
+#principal.active{
+    display: flex;
+    opacity:1;
+    visibility: visible;
+    background: transparent;
+    background-image: url(../Imagenes/marco_menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:65vw 80vh;
+    width: 65vw;
+    height: 80vh;
+    position: absolute;
+    right:8%;
+    bottom:7%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    
+}
+#principal1.active{
+    display: flex;
+    opacity:1;
+    visibility: visible;
+    background: transparent;
+    background-image: url(../Imagenes/marco_menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:65vw 80vh;
+    width: 65vw;
+    height: 80vh;
+    position: absolute;
+    right:8%;
+    bottom:7%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+#descripcion{
+    margin-top: 50px;
+    width: 40%;
+    color: #F6E9E9;
+}
+#descripcion h2{
+    font-family: "Goldman";
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+#descripcion p{
+    font-family: "offside";
+    font-size: 20px;
+    text-align: start;
+}
+#descripcion figure{
+    margin: 50px;
+    display:flex;
+    align-items: center;
+    font-family: "Goldman";
+    font-size: 25px;
+}
+#descripcion figure img{
+    height: 50px;
+    margin: 20px;
+}
+#avatar img{
+    position:relative;
+    height:650px;
+    left:70px;
+}
+
+
+#iconoshabi{
+    display:block;
+    margin-top: -50px;
+}
+#titulohabilidades{
+    text-align: center;
+    margin: 70px;
+    font-size: 50px;
+    font-family: "Goldman";
+    color: #F6E9E9;
+}
+.habilidades1{
+    display: flex;
+    justify-content: center;
+    margin:-100px
+}
+#subtitulohabilidades{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Goldman";
+    color: #F6E9E9;
+    position:relative;
+    bottom:-70px
+}
+.habilidades2{
+    display:flex;
+    justify-content: center;
+    position:relative;
+    bottom:-45px
+}
+.icons{
+    width: auto;
+    height: 100px;
+    border-radius: 7px;
+}
+.hexagono {
+    position: relative;
+    display: inline-block;
+    background-image: url(../Imagenes/hexagon.png);
+    background-size: 160px 180px;
+    width: 160px;
+    height: 180px;
+    margin: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hexagono figcaption {
+    position: absolute;
+    bottom: -10%;
+    font-family: "Michroma";
+    background-color: #272121;
+    color: #F6E9E9;
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hexagono:hover figcaption {
+    opacity: 1;
+}
+#principal2.active{
+    display: block;
+    opacity:1;
+    visibility: visible;
+    background: transparent;
+    background-image: url(../Imagenes/marco_menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:65vw 80vh;
+    width: 65vw;
+    height: 80vh;
+    position: absolute;
+    right:8%;
+    bottom:7%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+#principal2 h1{
+    text-align: center;
+    margin:50px;
+    font-size:40px;
+    font-family: "Goldman";
+    color: #F6E9E9;
+}
+#principal2 h2{
+    text-align: left;
+    font-size:40px;
+    margin:0 22px;
+    font-weight: 800;
+    font-family: "Michroma";
+    color: #F6E9E9;
+}
+#principal2 span{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "offside";
+    color: #F6E9E9;
+    text-align: left;
+}
+#principal2 h3{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: 16px;
+    margin:0 22px;
+    font-weight: 200;
+    font-family: "offside";
+    color: #F6E9E9;
+    text-align: left;
+    margin-top: 10px;
+}
+#principal2 img{
+    position:absolute;
+    left:50%;
+    height: 70%;
+    width: auto;
+}
+#principal2 .fechas1{
+    position: relative;
+    left:20%;
+    top:-15%;
+    background-image: url(../Imagenes/linea_cuadro2.png);
+    background-size:350px 150px;
+    background-repeat: no-repeat;
+    align-items: center;
+    width: 350px;
+    height: 150px;
+    margin: 190px 0;
+}
+#principal2 .fechas2{
+    position: absolute;
+    right:17%;
+    top:45%;
+    background-image: url(../Imagenes/linea_cuadro.png);
+    background-size:350px 150px;
+    width: 350px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+#principal3.active{
+    display: flex;
+    flex-wrap: wrap;
+    opacity:1;
+    visibility: visible;
+    background: transparent;
+    background-image: url(../Imagenes/marco_menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:65vw 80vh;
+    width: 65vw;
+    height: 80vh;
+    position: absolute;
+    right:8%;
+    bottom:7%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+#contenidoProyectos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#contenidoProyectos .seccionProyecto{
+    display: block;
+    background-image: url(../Imagenes/marco_proyecto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 260px 260px;
+    width: 260px;
+    height: 260px;
+    margin: 20px 50px;
+    justify-content: center;
+    text-align: center;
+}
+.seccionProyecto figcaption{
+    color: #F6E9E9;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: "michroma";
+    margin: 20px 0;  
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.seccionProyecto:hover figcaption{
+    opacity: 1;
+}
+.proyecto{
+    width: 240px;
+    height:140px;
+    margin:10px;
+    border-radius: 5px;
+    cursor:url(../Imagenes/cursor2.png),auto;
+}
+@media (max-width: 1038px){
+    .menu-buttons button.active{
+        width:35vw ;
+        height: 6vh;
+        font-size: 4vw;
+    }
+    
+    .menu-buttons button{
+        width:35vw ;
+        height: 6vh;
+        font-size: 4vw;
+    }
+}
